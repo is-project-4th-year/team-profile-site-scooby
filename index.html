@@ -1,44 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Team Profile</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Scooby Team Profile</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Inter', Arial, sans-serif;
       background: #f4f4f4;
-    }
-    h1 {
       color: #333;
+      display: flex;
+      flex-direction: column;
     }
+
+    header {
+      background: linear-gradient(to right, #1e88e5, #64b5f6);
+      color: white;
+      text-align: center;
+      padding: 40px 20px 20px;
+      position: relative;
+    }
+
+    header img.logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 60px;
+      height: 60px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    header p {
+      margin: 8px 0 20px;
+      font-size: 16px;
+      font-weight: 300;
+    }
+
+    main {
+      padding: 40px 20px;
+      flex: 1;
+    }
+
+    main > h1 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 40px;
+      color: #1565c0;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .members-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
     .member {
       background: #fff;
-      padding: 15px;
-      margin-bottom: 10px;
-      border-radius: 5px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+      transition: 0.3s ease;
+      text-align: center;
     }
-      .avatar {
-      max-width: 100px;
+
+    .member:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+    }
+
+    .member h2 {
+      margin: 10px 0;
+      font-size: 22px;
+      color: #1565c0;
+    }
+
+    .member p {
+      font-size: 14px;
+      margin: 6px 0;
+    }
+
+    .avatar {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    }
+
+
+    footer {
+      background: linear-gradient(to right, #1e88e5, #64b5f6);
+      color: white;
+      text-align: center;
+      padding: 16px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 26px;
+      }
+
+      main > h1 {
+        font-size: 24px;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Our Team</h1>
+  <header>
+    <img src="images/logo.jpg" alt="Team Logo" class="logo">
+    <h1>Scooby Team Profile</h1>
+    <p>ICS 4th Year GitHub Essentials Project</p>
+  </header>
 
-  <!-- 👇 Each student adds their member block here -->
-  <!-- Example:
-  <div class="member">
-    <h2>Student Name</h2>
-    <p><strong>GitHub:</strong> @username</p>
-    <p><strong>Favorite Tech:</strong> JavaScript</p>
-    <p><strong>Fun Fact:</strong> I love cats!</p>
+  <main>
+    <h1>Our Team</h1>
+    <!-- 👇 Each student adds their member block here -->
+    <!-- Example:
+    <div class="member">
+      <h2>Student Name</h2>
+      <p><strong>GitHub:</strong> @username</p>
+      <p><strong>Favorite Tech:</strong> JavaScript</p>
+      <p><strong>Fun Fact:</strong> I love cats!</p>
+    </div>
+    -->
+    <div class="members-grid">
+      <div class="member">
+        <img src="images/eagle.jpg" alt="Eagle Avatar" class="avatar">
+        <h2>Martin Lenga</h2>
+        <p><strong>GitHub:</strong> @MartinLenga</p>
+        <p><strong>Favorite Tech:</strong> Machine Learning & Predictive Analytics</p>
+        <p><strong>Fun Fact:</strong> I never miss a Champions League night — even if there's a deadline.</p>
+        <p><strong>Animal Avatar:</strong> 🦅 Eagle — Because of its vision, independence and precision. It represents how I focus, soar above distractions, and strike when it matters most.</p>
+    </div>
+    <div class="member">
+    <h2>Elvis Muchiri</h2>
+    <img src="images/lion.jpg" alt="Avatar of a lion" width="150">
+    <p><strong>GitHub:</strong> @ElvisMwitari</p>
+    <p><strong>Favorite Tech:</strong> Dart</p>
+    <p><strong>Fun Fact:</strong> I love dogs!</p>
+    <p><strong>Animal Avatar:</strong> 🦁 Lion — I picked the lion because it symbolizes courage, leadership, and confidence — qualities I strive to bring to every team project.</p>
   </div>
-  -->
-  
-
+  <!-- More members can be added here -->
+</div>
+  <footer>
+    © 2025 Team Scooby | Crafted with ❤️ using HTML & CSS
+  </footer>
 </body>
 </html>
-    
