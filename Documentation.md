@@ -1,4 +1,4 @@
-Elvis Muchiri 146497 
+### Elvis Muchiri 146497 
 
 ### Key Concepts Learned
 
@@ -39,7 +39,7 @@ Elvis Muchiri 146497
 - **Assignee**: Person responsible for the task (usually myself).
 - Learned how to assign these roles within a PR for team clarity.
 
-Martin Lenga 150160
+### Martin Lenga 150160
 
 ## Key Concepts from the GitHub Crash Course
 
@@ -71,12 +71,12 @@ Throughout the crash course, I developed a practical understanding of GitHub's c
 - Adopted commit message structure like:  
   `type(scope): short description`
 - Used different commit types including:
-  - `feat` for new features
-  - `fix` for bug fixes
-  - `docs` for documentation updates
-  - `style` for visual or format changes
-  - `refactor` for internal code restructuring
-  - `chore` for non-code tasks (e.g., image uploads, config)
+  - `feat` - new features
+  - `fix` - bug fixes
+  - `docs` - documentation updates
+  - `style` - visual or format changes
+  - `refactor` - internal code restructuring
+  - `chore` - non-code tasks (e.g., image uploads, config)
 - Helped keep commit history clean, understandable, and traceable to issues or PRs.
 
 ---
