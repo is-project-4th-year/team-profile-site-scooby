@@ -1,5 +1,4 @@
-Elvis Muchiri 146497 
-Shaggy Velma 000000
+Elvi Muchiri 146497 
 
 ### Key Concepts Learned
 
